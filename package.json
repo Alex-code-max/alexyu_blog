@@ -1,0 +1,17 @@
+{
+  "name": "alexyu_blog",
+  "version": "1.0.0",
+  "description": "VitePress + Github Actions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alex-code-max/alexyu_blg.git"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.1.0"
+  }
+}
