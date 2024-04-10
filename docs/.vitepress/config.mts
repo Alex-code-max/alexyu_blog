@@ -15,9 +15,10 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: "首页",
         items: [
           {
-            text: "首页",
+            text: "描述",
             link: "/main",
           },
         ],
