@@ -2,8 +2,9 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   base: "/alexyu_blog/",
-  title: "My Awesome Project",
+  title: "Alexyu's Blog",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,16 +15,26 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Examples",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          {
+            text: "首页",
+            link: "/main",
+          },
+        ],
+      },
+      {
+        text: "CSS",
+        items: [
+          {
+            text: "通用 CSS 笔记、建议与指导",
+            link: "/css/specification",
+          },
         ],
       },
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/Alex-code-max/alexyu_blg" },
     ],
   },
 });
