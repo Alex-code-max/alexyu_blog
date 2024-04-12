@@ -220,7 +220,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/Alex-code-max/alexyu_blg" },
+      { icon: "github", link: "https://github.com/Alex-code-max/alexyu_blog" },
     ],
   },
 });
