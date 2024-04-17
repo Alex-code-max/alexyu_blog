@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "../favicon.ico" }]],
   base: "/alexyu_blog/",
   title: "Alexyu's Blog",
   description: "A VitePress Site",
