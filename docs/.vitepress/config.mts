@@ -24,8 +24,29 @@ export default defineConfig({
         ],
       },
       {
+        text: "HTML",
+        items: [
+          {
+            text: "HTML 基础",
+            link: "/html/basis",
+          },
+        ],
+      },
+      {
         text: "CSS",
         items: [
+          {
+            text: "CSS 基础",
+            link: "/css/basis",
+          },
+          {
+            text: "CSS 选择器",
+            link: "/css/selector",
+          },
+          {
+            text: "CSS 动画",
+            link: "/css/animation",
+          },
           {
             text: "通用 CSS 笔记、建议与指导",
             link: "/css/specification",
