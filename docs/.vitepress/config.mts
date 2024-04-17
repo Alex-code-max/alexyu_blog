@@ -45,6 +45,10 @@ export default defineConfig({
             link: "/css/selector",
           },
           {
+            text: "CSS 居中",
+            link: "/css/center",
+          },
+          {
             text: "CSS 动画",
             link: "/css/animation",
           },

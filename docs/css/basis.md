@@ -2,11 +2,11 @@
 
 Cascading Style Sheet 层叠样式表
 
-## **老 IE 已死，涉及老 IE 浏览器的内容可忽略**
+---
 
-### [CSS 选择器](./selector.md)
+### **老 IE 已死，涉及老 IE 浏览器的内容可忽略**
 
-### 盒模型
+## 盒模型
 
 盒模型有两种， IE 怪异盒子模型、W3C 标准盒子模型；
 
@@ -33,7 +33,7 @@ box-sizing: content-box;
 box-sizing: border-box;
 ```
 
-### BFC
+## BFC
 
 [什么是 BFC](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Block_formatting_context)
 
@@ -78,7 +78,7 @@ BFC 布局规则：
 
 - FFC（Flex formatting contexts）:自适应格式上下文
 
-### 非布局样式
+## 非布局样式
 
 - 字体、字重、颜色、大小、行高
 - 背景、边框
@@ -86,13 +86,13 @@ BFC 布局规则：
 - 粗体、斜体、下划线
 - 其他
 
-### 行高的构成
+## 行高的构成
 
 - 行高是由 line-box 组成的
 - line-box 是由一行里的 inline-box 组成的
 - inline-box 中最高的那个，或字体最大的拿个决定行高
 
-### float
+## float
 
 - 元素"浮动"
 - 脱离文档流
@@ -118,7 +118,7 @@ BFC 布局规则：
 - 从布局上"消失"
 - 高度塌陷
 
-### 清楚浮动
+### 清除浮动
 
 浮动的元素布局时不会占据父元素的布局空间，即父元素布局时不会管浮动元素，浮动元素有可能超出父元素，从而对其他元素造成影响。
 
@@ -126,7 +126,7 @@ BFC 布局规则：
 父元素 overflow: auto/hidden。 让父元素去关注里面的高度。
 必须定义 width 或 zoom:1，同时不能定义 height，使用 overflow:auto 时，浏览器会自动检查浮动区域的高度
 
-方法二： 使用伪元素清楚浮动
+方法二： 使用伪元素清除浮动
 
 ```css
 .container::after {
@@ -138,7 +138,7 @@ BFC 布局规则：
 }
 ```
 
-### inline-block 的间隙
+## inline-block 的间隙
 
 两个并列的 inline-block 中间会有一条裂缝，这个的原因是两个标签之间有空格，浏览器把这些空格当成文字中空格，所以这两个块中间多少有间隙。
 
@@ -147,7 +147,7 @@ BFC 布局规则：
 1. 删除两个标签间的空格，但是这样 html 排版不好
 2. 容器元素 font-size: 0 然后再在里面再重新设置字体大小
 
-### 你对 line-height 是如何理解的？
+## 你对 line-height 是如何理解的？
 
 - line-height 指一行字的高度，包含了字间距，实际上是下一行基线到上一行基线距离
 - 如果一个标签没有定义 height 属性，那么其最终表现的高度是由 line-height 决定的
@@ -167,20 +167,20 @@ BFC 布局规则：
 
 如何解决： 因为它会遵守文字对齐方案，那么就把图片的对齐方式修改为 `vertical-align: bottom`。或者让他`display: block`，这样图片虽然会换行，但是没有间隙了。
 
-### 边框
+## 边框
 
 - 边框的属性： 线型、大小、颜色
 - 边框背景图
 - 边框衔接
 
-### 滚动
+## 滚动
 
 - visible 滚动条隐藏, 文字超出显示
 - hidden 滚动条隐藏, 文字超出不显示
 - scroll 滚动条一直显示，无论文字是否够多
 - auto 滚动条自动隐藏
 
-### 文字折行
+## 文字折行
 
 - overflow-wrap(word-wrap)通用换行控制
   - 是否保留单词
@@ -188,14 +188,14 @@ BFC 布局规则：
   - 中文句子也是单词
 - white-space 空白处是否换行
 
-### 装饰属性及其他
+## 装饰属性及其他
 
 - 字重（粗体） font-weight
 - 斜体 font-style: itatic
 - 下划线 text-decoration
 - 指针 cursor
 
-### CSS Hack
+## CSS Hack
 
 在一部分不合法，但是在某些浏览器上生效的写法就叫 CSS Hack，一般用来兼容老的浏览器， 缺点是难理解、难维护、易失效
 
@@ -238,7 +238,7 @@ div {
 }
 ```
 
-### display: none; 与 visibility: hidden; 的区别
+## display: none; 与 visibility: hidden; 的区别
 
 结构：
 
@@ -267,7 +267,7 @@ div {
 
 相同点： 它们都能让元素不可见、他们都依然可以被 JS 所获取到
 
-### 外边距折叠(collapsing margins)
+## 外边距折叠(collapsing margins)
 
 外边距重叠就是 margin-collapse
 
@@ -281,7 +281,7 @@ div {
 
 新手在做导航栏的时候发现页面整体掉下来一截就是这个原因。
 
-### CSS 单位
+## CSS 单位
 
 1. px 绝对单位。传统上一个像素对应于计算机屏幕上的一个点，而对于高清屏则对应更多。
 
@@ -304,7 +304,7 @@ div {
    3. vmin：基于 vw 和 vh 中的最小值来计算，1vmin 等于最小值的百分之一
    4. vmax：基于 vw 和 vh 中的最大值来计算，1vmax 等于最大值的百分之一
 
-### [transform 变形](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+## [transform 变形](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
 
 与 transition、translate 名字有点像，transition 是做过渡动画的，而 translate 是用来做平移的。
 
@@ -340,7 +340,7 @@ div {
 - perspective(n)
   - 为 3D 转换元素定义透视视图。
 
-### CSS 预处理器
+## CSS 预处理器
 
 - 嵌套
   - 反映层级和约束
@@ -355,7 +355,7 @@ div {
 - import
   - CSS 模块化
 
-### CSS 优化、提高性能的方法有哪些？
+## CSS 优化、提高性能的方法有哪些？
 
 - 多个 css 合并，尽量减少 HTTP 请求
 - css 雪碧图
@@ -377,7 +377,7 @@ div {
 - @import 必须在样式规则之前，可以在 css 文件中引用其他文件
 - 总体来说：link 优于@import
 
-### CSS 有哪些继承属性
+## CSS 有哪些继承属性
 
 - 关于文字排版的属性如：
   - font
@@ -395,7 +395,7 @@ div {
 - visibility
 - cursor
 
-### display 有哪些值？说明他们的作用
+## display 有哪些值？说明他们的作用
 
 - block 像块类型元素一样显示。
 - none 将元素的显示设为无，即在网页中不占任何的位置。
@@ -405,7 +405,7 @@ div {
 - table 此元素会作为块级表格来显示
 - inherit 规定应该从父元素继承 display 属性的值
 
-### position 有哪些值？ relative 和 absolute 定位原点是？
+## position 有哪些值？ relative 和 absolute 定位原点是？
 
 - absolute 生成绝对定位的元素，相对于值不为 static 的第一个父元素进行定位。
 - fixed （老 IE 不支持） 生成绝对定位的元素，相对于浏览器窗口进行定位。
@@ -413,7 +413,7 @@ div {
 - static 默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right - z-index 声明）。
 - inherit 规定从父元素继承 position 属性的值
 
-### CSS3 新特性？
+## CSS3 新特性？
 
 ```css
 - 新增选择器 p:nth-child(n){color: rgba(255, 0, 0, 0.75)}
@@ -439,13 +439,13 @@ div {
   - 缩放 transform: scale(.5);
 ```
 
-### 如何水平居中一个元素？
+## 如何水平居中一个元素？
 
 如果需要居中的元素为 inline 或 inline-block，为父元素设置 `text-align: center;`即可实现
 
 如果要居中的元素为一个块级元素的话，一般使用 `margin: 0 auto;` 进行居中。
 
-### 用纯 CSS 创建一个三角形的原理是什么？
+## 用纯 CSS 创建一个三角形的原理是什么？
 
 把 border 的其他三条边设为透明
 注意，这里要把 `border-width` 、`border-style`、 `border-color` 分开写。
@@ -460,11 +460,11 @@ div {
 }
 ```
 
-### li 与 li 之间有看不见的空白间隔是什么原因引起的？有什么解决办法？(也称幽灵字符)
+## li 与 li 之间有看不见的空白间隔是什么原因引起的？有什么解决办法？(也称幽灵字符)
 
 行框的排列会受到中间空白（回车\空格）等的影响，因为空格也属于字符, 这些空白也会被应用样式，占据空间，所以会有间隔，把字符大小设为 0，就没有空格了
 
-### display:inline-block 什么时候会显示间隙？(携程)
+## display:inline-block 什么时候会显示间隙？(携程)
 
 - 相邻的 inline-block 元素之间有换行或空格分隔的情况下会产生间距
 - 非 inline-block 水平元素设置为 inline-block 也会有水平间距
@@ -472,13 +472,13 @@ div {
 - 可以在父级加 font-size：0; 在子元素里设置需要的字体大小，消除垂直间隙
 - 把 li 标签写到同一行可以消除垂直间隙，但代码可读性差
 
-### 什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的 IE？
+## 什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的 IE？
 
 - 响应式设计就是网站能够兼容多个不同大小的终端，而不是为每个终端做一个特定的版本
 - 基本原理是利用 CSS3 媒体查询，为不同尺寸的设备适配不同样式
 - 对于低版本的 IE，可采用 JS 获取屏幕宽度，然后通过监听 window.onresize 方法来实现兼容
 
-### 谈谈浮动和清除浮动
+## 谈谈浮动和清除浮动
 
 浮动的框可以向左或向右移动，**直到他的外边缘碰到包含框或另一个浮动框的边框为止**。 **浮动框脱离文档流**，所以文档的普通流的块框表现得就像浮动框不存在一样。浮动的块框会漂浮在文档普通流的块框上。
 
@@ -523,13 +523,13 @@ div {
 
 <!-- 参考链接[几种常用的清除浮动方法](https://www.cnblogs.com/nxl0908/p/7245460.html) -->
 
-### box-sizing 常用的属性有哪些？分别有什么作用？
+## box-sizing 常用的属性有哪些？分别有什么作用？
 
 - box-sizing: content-box; // 默认的标准(W3C)盒模型元素效果
 - box-sizing: border-box; // 触发怪异(IE)盒模型元素的效果
 - box-sizing: inherit; // 继承父元素 box-sizing 属性的值
 
-### 请列举几种隐藏元素的方法
+## 请列举几种隐藏元素的方法
 
 - visibility: hidden; 这个属性只是简单的隐藏某个元素，但是元素占用的空间任然存在
 - opacity: 0; CSS3 属性，设置 0 可以使一个元素完全透明
@@ -540,20 +540,20 @@ div {
 - height: 0; 将元素高度设为 0 ，并消除边框
 - filter: blur(0); CSS3 属性，将一个元素的模糊度设置为 0
 
-### rgba() 和 opacity 的透明效果有什么不同？
+## rgba() 和 opacity 的透明效果有什么不同？
 
 - opacity 作用于元素以及元素内的所有内容（包括文字）的透明度
 - rgba() 只作用于元素自身的颜色或其背景色，子元素不会继承透明效果
 
-### css 属性 content 有什么作用？
+## css 属性 content 有什么作用？
 
 content 属性专门应用在 before/after 伪元素上，用于插入额外内容或样式
 
-### 元素竖向的百分比设定是相对于容器的高度吗？
+## 元素竖向的百分比设定是相对于容器的高度吗？
 
 元素竖向的百分比设定是相对于容器的宽度，而不是高度
 
-### a 标签上四个伪类的使用顺序是怎么样的？
+## a 标签上四个伪类的使用顺序是怎么样的？
 
 link > visited > hover > active
 简称 lvha(love-ha)
@@ -562,7 +562,7 @@ link > visited > hover > active
 
 在这里，比如把 hover 放在 active 后面，那么实际你在激活（active）链接的时候就触发了 hover 伪类，hover 在后面覆盖了 active 的颜色，所以始终无法看到 active 的颜色
 
-### 伪元素和伪类的区别和作用？
+## 伪元素和伪类的区别和作用？
 
 伪元素:在内容元素的前后插入额外的元素或样式，但是这些元素实际上并不在文档中生成。它们只在外部显示可见，但不会在文档的源代码中找到它们，因此，称为“伪”元素。例如：
 
@@ -592,7 +592,7 @@ p:first-child {
 }
 ```
 
-### ::before 和 :after 中双冒号和单冒号有什么区别？
+## ::before 和 :after 中双冒号和单冒号有什么区别？
 
 - 在 CSS 中伪类一直用 : 表示，如 :hover, :active 等
 - 伪元素在 CSS1 中已存在，当时语法是用 : 表示，如 :before 和 :after
@@ -615,7 +615,7 @@ p:first-child {
 - 适用于小图片
 - base64 的体积约为原图 4/3
 
-### margin 叠加几种情况
+## margin 叠加几种情况
 
 margin 叠加的意思是：当两个或者更多的垂直外边距 相遇时，它们将形成一个外边距，这个外边距的高度等于两个发生叠加的外边距中高度较大者。
 

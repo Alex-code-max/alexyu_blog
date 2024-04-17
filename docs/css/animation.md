@@ -1,4 +1,6 @@
-# CSS 动画
+# CSS3 动画
+
+## CSS3 动画
 
 - 位置 - 平移
 - 方向 - 旋转
@@ -6,14 +8,14 @@
 - 透明度
 - 其他 - 线形变换
 
-### 前端动画怎么做
+## 前端动画怎么做
 
 - animation 过渡动画
 - transition 过渡动画
 - JS 原生控制 DOM 位置
 - canvas 绘制动画
 
-### transition 过渡动画
+## transition 过渡动画
 
 用来控制过渡的时间，使用过渡的属性，过渡效果曲线，过渡的延时
 
@@ -43,7 +45,7 @@ div:hover {
 }
 ```
 
-### transition-timing-function
+## transition-timing-function
 
 - ease 慢速开始，然后变快，然后慢速结束
 - ease-in 慢速开始
@@ -54,7 +56,7 @@ div:hover {
 
 bezier 曲线在线效果网址 [cubic-bezier.com](http://cubic-bezier.com)
 
-### animation 关键帧动画
+## animation 关键帧动画
 
 相当于多个补间动画组合到一起
 
@@ -107,20 +109,20 @@ bezier 曲线在线效果网址 [cubic-bezier.com](http://cubic-bezier.com)
 }
 ```
 
-### 过渡动画和关键帧动画的区别
+## 过渡动画和关键帧动画的区别
 
 - 过渡动画需要有状态变化
 - 关键帧动画不需要状态变化
 - 关键帧动画能控制更精细
 
-### CSS 动画的性能
+## CSS 动画的性能
 
 - CSS 动画不差
 - 部分情况下优于 JS
 - JS 可以做到更精细
 - 含高危属性，会让性能变差 (如 box-shadow)
 
-### display 属性
+## display 属性
 
 当改变元素 display 属性时，过渡属性 transition 失效。
 

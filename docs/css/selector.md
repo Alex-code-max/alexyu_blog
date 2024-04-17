@@ -1,4 +1,6 @@
-### CSS 选择器分类
+# CSS 选择器
+
+## CSS 选择器分类
 
 - 标签选择
 - id 选择器
@@ -12,7 +14,7 @@
 - 伪类选择器
 - 伪元素选择器 ::before{}
 
-### CSS3 属性选择器
+## CSS3 属性选择器
 
 | 选择器              | 描述                                                         |
 | ------------------- | ------------------------------------------------------------ |
@@ -24,7 +26,7 @@
 | [attribute$=value]  | 匹配属性值以指定值结尾的每个元素。                           |
 | [attribute*=value]  | 匹配属性值中包含指定值的每个元素。                           |
 
-### CSS3 伪类选择器
+## CSS3 伪类选择器
 
 [伪类 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes#%E6%A0%87%E5%87%86%E4%BC%AA%E7%B1%BB%E7%B4%A2%E5%BC%95)
 常用：
@@ -50,18 +52,18 @@
 - :nth-last-child(n)
 - p:only-child
 
-### 伪类和伪元素区别
+## 伪类和伪元素区别
 
 - 伪类值一种状态 比如:hover
 - 伪元素是一个真实存在的元素，他可以有样式有内容
 
-### iconfont 原理
+## iconfont 原理
 
 - 利用编码让图标编为一个字符
 - 引入字体
 - 利用 before 伪元素向页面中插入一个文字
 
-### css 定义的权重
+## css 定义的权重
 
 - !important 优先级最高，但也会被权重高的 important 所覆盖
 - 行内样式总会覆盖外部样式表的任何样式(除了!important)
@@ -74,13 +76,13 @@
 !important > 行内样式 > ID 选择器 > (类选择器 | 属性选择器 | 伪类选择器 ) > 元素选择器 > \*
 ![大鱼吃小鱼](http://image.zhangxinxu.com/image/blog/201208/specifishity1-1.png)
 
-### 浏览器解析 CSS
+## 浏览器解析 CSS
 
 `.wrapper div > p` CSS 中，浏览器查找元素是通过选择权从后往前找的， 这样做的目的是加快 CSS 解析速度，从后往前，排除法
 
 [浏览器解析 css 选择器的规则](https://blog.csdn.net/qq_21397815/article/details/72874932)
 
-### 怎样美化一个 checkbox ?
+## 怎样美化一个 checkbox ?
 
 - 让原本的勾选框隐藏
 - `input + label` 背景图没选中
