@@ -15,8 +15,11 @@ hero:
     #   link: /api-examples
 
 features:
+  - title: HTML
+    link: /html/basis
+    details: html相关
   - title: CSS
-    link: /css/specification
+    link: /css/basis
     details: css相关（语法、规范、预处理语言等）
   - title: MARKDOWN
     link: /markdown/document
