@@ -21,9 +21,10 @@ features:
   - title: CSS
     link: /css/basis
     details: css相关（语法、规范、预处理语言等）
+  - title: JS
+    link: /js/basis
+    details: javascript相关
   - title: MARKDOWN
     link: /markdown/document
     details: MarkDown相关文档、在线编辑、vscode插件等
-  # - title: Feature C
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---

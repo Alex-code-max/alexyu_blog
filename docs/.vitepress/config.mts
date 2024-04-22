@@ -13,7 +13,6 @@ export default defineConfig({
       // { text: "HTML", link: "/html/basis" },
       // { text: "CSS", link: "/css/basis" },
     ],
-
     sidebar: [
       {
         text: "首页",
@@ -55,6 +54,83 @@ export default defineConfig({
           {
             text: "通用 CSS 笔记、建议与指导",
             link: "/css/specification",
+          },
+        ],
+      },
+      {
+        text: "JS",
+        items: [
+          {
+            text: "JS 基础",
+            link: "/js/basis",
+          },
+          {
+            text: "变量类型",
+            link: "/js/variable-type",
+          },
+          {
+            text: "类型转换",
+            link: "/js/type-conversion",
+          },
+          {
+            text: "运算符",
+            link: "/js/operator",
+          },
+          {
+            text: "BOM",
+            link: "/js/bom",
+          },
+          {
+            text: "DOM",
+            link: "/js/dom",
+          },
+          {
+            text: "ES6",
+            link: "/js/es6",
+          },
+          {
+            text: "ServiceWorker",
+            link: "/js/service-worker",
+          },
+          {
+            text: "事件轮询",
+            link: "/js/event-polling",
+          },
+          {
+            text: "this",
+            link: "/js/this",
+          },
+          {
+            text: "事件",
+            link: "/js/event",
+          },
+          {
+            text: "事件循环",
+            link: "/js/event-loop",
+          },
+          {
+            text: "作用域",
+            link: "/js/scope",
+          },
+          {
+            text: "对象",
+            link: "/js/objects",
+          },
+          {
+            text: "函数",
+            link: "/js/function",
+          },
+          {
+            text: "原型链与继承",
+            link: "/js/prototypes",
+          },
+          {
+            text: "垃圾回收机制",
+            link: "/js/gc",
+          },
+          {
+            text: "正则",
+            link: "/js/regexp",
           },
         ],
       },
